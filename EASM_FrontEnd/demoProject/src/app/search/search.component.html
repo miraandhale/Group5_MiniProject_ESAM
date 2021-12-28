@@ -1,0 +1,28 @@
+<div>
+    Enter Id :<input type="text" [(ngModel)]="empid" placeholder="Enter Id to search">
+    <input type="button" value="Search"  (click)="searchEmp()">
+</div>
+
+    <table border="1">
+        <thead>
+            <th>Employee Id</th>
+            <th>Emailid</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>DOB</th>
+            <th>City</th>
+            <th>DOJ</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{emp.empid}}</td>
+                <td>{{emp.emailId}}</td>
+                <td>{{emp.firstname}}</td>
+                <td>{{emp.lastname}}</td>
+                <td>{{emp.dob}}</td>
+                <td>{{emp.city}}</td>
+                <td>{{emp.doj}}</td>
+            </tr>
+        </tbody>
+    </table>
+    

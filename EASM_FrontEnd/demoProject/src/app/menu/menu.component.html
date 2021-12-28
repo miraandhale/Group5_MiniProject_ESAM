@@ -1,0 +1,20 @@
+<body>
+<div id="menubar">
+<ul>
+    <li role="presentation" style="padding-right: 10px; font-size:12px;color: rgb(44, 96, 207);">Employee Assessment Score Management</li>
+    <!-- <li role="presentation"><a routerLink="registerEmp">Add Employee</a></li> -->
+    <!--experiment-->
+    
+    <li role="presentation"><a routerLink="registerEmp">Add Employee</a></li>
+
+    <!--experiment-->
+    <li role="presentation"><a routerLink="allemps">All Employees</a></li>
+    <li role="presentation"><a routerLink="search">Search Employees</a></li>
+    <li role="presentation"><a routerLink="registerscore">Add score</a></li>
+    <li role="presentation"><a routerLink="viewallscores">View All score</a></li>
+
+    <li role="presentation" (click)="showId()">Admin Id : {{current_user_id}}</li>
+    <li role="presentation" (click)="redirectTologin()">Logout</li>
+</ul>
+</div>
+</body>

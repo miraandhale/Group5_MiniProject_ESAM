@@ -1,0 +1,8 @@
+h1{
+    color: blue;
+}
+body{
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 650px;
+}

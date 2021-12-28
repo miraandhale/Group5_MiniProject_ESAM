@@ -1,0 +1,39 @@
+<!-- <div style="color:green; text-align:center; font-weight: 700 ;">{{message}}</div> -->
+<form>
+    <fieldset>
+        <legend>Update Score</legend>
+            <table>
+                
+                <tr>
+                    <td>Employee Id:</td>
+                    <td><input type="text"id="empid" name="empid"  [(ngModel)]="score.empid" ></td>
+                </tr>
+
+                <tr>
+                    <td>Java</td>
+                    <td><input type="text" id="java" name="java" [(ngModel)]="score.java"></td>
+                </tr>
+
+                <tr>
+                    <td>Spring:</td>
+                    <td><input type="text" id="spring" [(ngModel)]="score.spring" name="spring"></td>
+                </tr>
+
+                <tr>
+                    <td>Python:</td>
+                    <td><input type="text" id="firstname" [(ngModel)]="score.python" name="firstname"></td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript:</td>
+                    <td><input type="text" id="javascript" name="javascript" [(ngModel)]="score.javascript"></td>
+                </tr>
+
+                <tr>
+                    <td>DataStructure</td>
+                    <td><input type="text" id="datastructure" name="datastructure" [(ngModel)]="score.datastructure"></td>
+                </tr>
+                <tr><td><input type="button" value="Update Score" (click)="updateScore()"></td></tr>
+            </table>
+    </fieldset>
+</form>

@@ -1,0 +1,32 @@
+<!--experiment-->
+<!-- <app-menu></app-menu> -->
+<!--experiment-->
+<h3>Employee Details</h3>
+<table border="1">
+    <thead>
+        <th>Employee Id</th>
+        <th>Emailid</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>DOB</th>
+        <th>City</th>
+        <th>DOJ</th>
+        <th>Delete Record</th>
+        <th>Update Record</th>
+        <!-- <th>View Score</th> -->
+    </thead>
+    <tbody>
+        <tr *ngFor="let emps of emps">
+            <td>{{emps.empid}}</td>
+            <td>{{emps.emailId}}</td>
+            <td>{{emps.firstname}}</td>
+            <td>{{emps.lastname}}</td>
+            <td>{{emps.dob}}</td>
+            <td>{{emps.city}}</td>
+            <td>{{emps.doj}}</td>
+            <td><input type="button" value="Delete" (click)="deleteEmployee(emps.empid)"></td>
+            <td><input type="button" value="Update" (click)="updateEmployee(emps)" id="updatebtn" style="background-color: green;"></td>
+            <!-- <td><input type="button" value="View Score Details"></td> -->
+        </tr>
+    </tbody>
+</table>

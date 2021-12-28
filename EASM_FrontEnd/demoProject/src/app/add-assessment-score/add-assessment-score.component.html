@@ -1,0 +1,39 @@
+<!-- <div style="color:green; text-align:center; font-weight: 700 ;">{{message}}</div> -->
+<form>
+    <fieldset>
+        <legend>Add Employee Score</legend>
+        
+            <table>
+                <tr>
+                    <td>Employee Id:</td>
+                    <td><input type="text"id="empid" name="empid"  [(ngModel)]="score.empid" placeholder="Enter Employee Id"></td>
+                </tr>
+                <tr>
+                    <td>Java:</td>
+                    <td><input type="text" id="java" name="java" [(ngModel)]="score.java" placeholder="Enter Java Score"></td>
+                </tr>
+
+                <tr>
+                    <td>Spring:</td>
+                    <td><input type="text" id="spring" [(ngModel)]="score.spring" name="spring" placeholder="Enter Spring Score"></td>
+                </tr>
+
+                <tr>
+                    <td>Python:</td>
+                    <td><input type="text" id="firstname" [(ngModel)]="score.python" name="firstname" placeholder="Enter Python Score"></td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript:</td>
+                    <td><input type="text" id="javascript" name="javascript" [(ngModel)]="score.javascript" placeholder="Enter JavaScript Score"></td>
+                </tr>
+
+                <tr>
+                    <td>Data Structure:</td>
+                    <td><input type="text" id="datastructure" name="datastructure" [(ngModel)]="score.datastructure" placeholder="Enter DS Score"></td>
+                </tr> 
+                <tr><td><input type="button" value="Add Score" (click)="registerCourse()"></td></tr>
+            </table>
+       
+    </fieldset>
+</form>

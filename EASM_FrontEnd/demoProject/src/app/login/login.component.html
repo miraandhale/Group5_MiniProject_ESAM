@@ -1,0 +1,27 @@
+<!-- <div>
+    {{message}}
+</div> -->
+
+<form [formGroup]="loginform">
+    <fieldset>
+        <legend><h3>Login</h3></legend>
+    <table>
+        <tbody>
+            <tr>
+                <td>Enter Admin Id:</td>
+                <td><input type="text" name="adminId" [(ngModel)]="adminId" placeholder="Enter Admin Id" formControlName="adminId" required></td>
+                <span class="error" *ngIf="admin.invalid && admin.touched">AdminId is required</span>
+            </tr>
+            <tr>
+                <td>Enter Password:</td>
+                <td><input type="password" name="password" [(ngModel)]="password" placeholder="Enter password" formControlName="password" required></td>
+            </tr>
+        </tbody>
+    
+    <div>
+        <input type="button" value="Login" (click)="authenticateNow()">
+    </div>
+</table>
+</fieldset>
+</form>
+
